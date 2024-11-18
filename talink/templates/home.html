@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  Beranda
+{% endblock %}
+
+{% block content %}
+  <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+    <div class="row align-items-center g-lg-5 py-5">
+      <div class="col-lg-7 text-center text-lg-start">
+        <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">
+          Pendekkan
+          <span class="text-success">URL-mu.</span>
+        </h1>
+        <div class="col-lg-10 fs-4">
+          <p>
+            Jadikan tautan panjang menjadi pendek agar mudah diketik dan
+            diingat. Gratis, sederhana, dan cepat.
+          </p>
+          <i>#FromTulungagungForEveryone</i>
+        </div>
+      </div>
+      <div class="col-md-10 mx-auto col-lg-5">
+        <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+          <div class="mb-3">
+            <label for="urlInput" class="form-label">Alamat URL</label>
+            <input
+              type="url"
+              class="form-control"
+              id="urlInput"
+              placeholder="https://..."
+            />
+          </div>
+          <button class="w-100 btn btn-lg btn-success" type="submit">
+            Pendekkan!
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+{% endblock %}
