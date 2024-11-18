@@ -1,0 +1,2 @@
+FLASK_APP=talink
+FLASK_DEBUG=1
